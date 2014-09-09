@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddUser(name="updateuser",method="post",action="/edituser")
+    input#inputUserName(type="text", name= "username", enabled="false", value=user.username)
+    input#inputUserEmail(type="text", name="useremail",value=user.email)
+    button#btnSubmit(type="submit") submit
