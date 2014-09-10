@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 About
+  nav(id="nav")
+    ul(class="submenu")
+      if(currentURL == "/about/team/")
+        li(class="active")
+          a(href="/about/team/") Team
+      else
+        li
+          a(href="/about/team/") Team
+      if(currentURL="/about/careers/")
+        li(class="active")
+          a(href="/about/careers/") Careers
+      else
+        li
+          a(href="/about/careers/") Careers

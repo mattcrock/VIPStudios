@@ -1,7 +1,54 @@
-doctype html
+doctype html5
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/skel-noscript.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    link(rel='stylesheet', href='/stylesheets/style-desktop.css')
+  body.homepage
+    div(id="header")
+      div(id="nav-wrapper")
+        nav(id="nav")
+          ul
+            if(currentURL == "/index/")
+              li(class="active")
+                a(href="/index/") Home
+            else
+              li
+                a(href="/index") Home
+
+            if(currentURL == "/about/")
+              li(class="active")
+                a(href="/about/") About Us
+            else
+              li
+                a(href="/about/") About Us
+
+            if(currentURL == "/studio/")
+              li(class="active")
+                a(href="/studio/") Studio
+            else
+              li
+                a(href="/studio/") Studio
+
+            if(currentURL == "/classes/")
+              li(class="active")
+                a(href="/classes/") Classes
+            else
+              li
+                a(href="/classes/") Classes
+
+            if(currentURL == "/news/")
+              li(class = "active")
+                a(href="/news/") News
+            else
+              li
+                a(href="/news/") News
+
+            if(currentURL == "/contact/")
+              li(class="active")
+                a(href="/contact/") Contact Us
+            else
+              li
+                a(href="/contact/") Contact Us
     block content
