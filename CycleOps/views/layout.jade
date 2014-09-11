@@ -17,19 +17,19 @@ html
               li
                 a(href="/index") Home
 
-            if(currentURL == "/about/")
+            if(currentURL == "/about/team/" || currentURL == "/about/careers/")
               li(class="active")
-                a(href="/about/") About Us
+                a(href="/about/team/") About Us
             else
               li
-                a(href="/about/") About Us
+                a(href="/about/team") About Us
 
-            if(currentURL == "/studio/")
+            if(currentURL == "/studio/vipstudios/" || currentURL == "/studio/vvipstudios/" || currentURL == "/studio/galery/" || currentURL == "/studio/bikefitment/")
               li(class="active")
-                a(href="/studio/") Studio
+                a(href="/studio/vipstudios") Studio
             else
               li
-                a(href="/studio/") Studio
+                a(href="/studio/vipstudios") Studio
 
             if(currentURL == "/classes/")
               li(class="active")

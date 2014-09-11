@@ -1,0 +1,33 @@
+extends ..\layout
+
+block content
+  h1 VIP Studios
+    nav(id="nav")
+      ul(class="submenu")
+        if(currentURL == "/studio/vipstudios/")
+          li(class="active")
+            a(href="/studio/vipstudios/") VIP Studios
+        else
+          li
+            a(href="/studio/vipstudios/") VIP Studios
+
+        if(currentURL == "/studio/vvipstudios/")
+          li(class="active")
+            a(href="/studio/vvipstudios/") VVIP Studios
+        else
+          li
+            a(href="/studio/vvipstudios/") VVIP Studios
+
+        if(currentURL == "/studio/galery/")
+          li(class="active")
+            a(href="/studio/galery/") Galery
+        else
+          li
+            a(href="/studio/galery/") Galery
+
+        if(currentURL == "/studio/bikefitment/")
+          li(class="active")
+            a(href="/studio/bikefitment/") ErgoFit Bike Fitment
+        else
+          li
+            a(href="/studio/bikefitment/") ErgoFit Bike Fitment

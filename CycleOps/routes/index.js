@@ -7,29 +7,43 @@ router.get('/index', function(req, res) {
    );
 });
 
-router.get('/about/team/', function(req, res){
-  res.render('aboutTeam', { title:'About Us', currentURL:'/about/team/'}
+router.get('/about/team', function(req, res){
+  res.render('\\about\\team', { title:'About Us', currentURL:'/about/team/'}
    )
 })
 
-router.get('/about/careers/', function(req, res){
-  res.render('aboutCareers', { title:'About Us', currentURL:'/about/careers/'}
+router.get('/about/careers', function(req, res){
+  res.render('\\about\\careers', { title:'About Us', currentURL:'/about/careers/'}
    )
 })
 
 router.get('/about', function(req, res){
-  res.render('aboutTeam', { title:'About Us', currentURL:'/about/team'}
+  res.render('\\about\\team', { title:'About Us', currentURL:'/about/team/'}
    )
 })
 
+router.get('/studio/vipstudios', function(req, res){
+  res.render('\\studio\\vipstudios', { title:'VIP Studio', currentURL:'/studio/vipstudios/'}
+   )
+})
 
-router.get('/studio', function(req, res){
-  res.render('studio', { title:'Studio', currentURL:'/studio/classes'}
+router.get('/studio/vvipstudios', function(req, res){
+  res.render('\\studio\\vvipstudios', { title:'VVIP Studios', currentURL:'/studio/vvipstudios/'}
+   )
+})
+
+router.get('/studio/galery', function(req, res){
+  res.render('\\studio\\galery', { title:'Galery', currentURL:'/studio/galery/'}
+   )
+})
+
+router.get('/studio/bikefitment', function(req, res){
+  res.render('\\studio\\bikefitment', { title:'Bike Fitment', currentURL:'/studio/bikefitment/'}
    )
 })
 
 router.get('/classes', function(req, res){
-  res.render('classes', { title:'Classes', currentURL:'/classes/'}
+  res.render('\\classes\\classes', { title:'Classes', currentURL:'/classes/'}
    )
 })
 
