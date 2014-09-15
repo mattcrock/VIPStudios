@@ -42,6 +42,41 @@ router.get('/studio/bikefitment', function(req, res){
    )
 })
 
+router.get('/classes/bookings', function(req, res){
+  res.render('\\classes\\bookings', { title:'Bookings', currentURL:'/classes/bookings/'}
+   )
+})
+
+router.get('/classes/cancellations', function(req, res){
+  res.render('\\classes\\cancellations', { title:'Cancellations', currentURL:'/classes/cancellations/'}
+   )
+})
+
+router.get('/classes/faq', function(req, res){
+  res.render('\\classes\\faq', { title:'FAQ', currentURL:'/classes/faq/'}
+   )
+})
+
+router.get('/classes/giftcards', function(req, res){
+  res.render('\\classes\\giftcards', { title:'Gift Cards', currentURL:'/classes/giftcards/'}
+   )
+})
+
+router.get('/classes/instructors', function(req, res){
+  res.render('\\classes\\instructors', { title:'Instructors', currentURL:'/classes/instructors/'}
+   )
+})
+
+router.get('/classes/packages', function(req, res){
+  res.render('\\classes\\packages', { title:'Packages', currentURL:'/classes/packages/'}
+   )
+})
+
+router.get('/classes/refferals', function(req, res){
+  res.render('\\classes\\refferals', { title:'Refferals', currentURL:'/classes/refferals/'}
+   )
+})
+
 router.get('/classes', function(req, res){
   res.render('\\classes\\classes', { title:'Classes', currentURL:'/classes/'}
    )

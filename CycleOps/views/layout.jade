@@ -6,6 +6,8 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/style-desktop.css')
   body.homepage
+    div(id="logo")
+      a(href="#")
     div(id="header")
       div(id="nav-wrapper")
         nav(id="nav")
@@ -31,12 +33,12 @@ html
               li
                 a(href="/studio/vipstudios") Studio
 
-            if(currentURL == "/classes/")
+            if(currentURL == "/classes/bookings/" || currentURL == "/classes/cancellations/" || currentURL == "/classes/faq/" || currentURL == "/classes/giftcards/" || currentURL == "/classes/instructors/" || currentURL == "/classes/packages/" || currentURL == "/classes/refferals/")
               li(class="active")
-                a(href="/classes/") Classes
+                a(href="/classes/bookings") Classes
             else
               li
-                a(href="/classes/") Classes
+                a(href="/classes/bookings") Classes
 
             if(currentURL == "/news/")
               li(class = "active")
@@ -51,4 +53,6 @@ html
             else
               li
                 a(href="/contact/") Contact Us
-    block content
+      div(class="container")
+
+  block content
