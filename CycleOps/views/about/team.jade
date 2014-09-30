@@ -1,7 +1,6 @@
 extends ..\layout
 
 block content
-  h1 AboutTeam
   nav(id="nav")
     ul(class="submenu")
       if(currentURL == "/about/team/")
@@ -17,3 +16,8 @@ block content
       else
         li
           a(href="/about/careers/") Careers
+
+  div(id="featured")
+    div(class="container")
+      header
+        h2 Team

@@ -8,6 +8,11 @@ html
   body.homepage
     div(id="logo")
       a(href="#")
+      form(name="login" action="#" method="post" class="login")
+        input(type="password" name="password" placeholder="Password")
+        input(type="text" name="username" placeholder="Username")
+        input(type="submit" value="submit" class="hidden")
+
     div(id="header")
       div(id="nav-wrapper")
         nav(id="nav")
@@ -56,3 +61,25 @@ html
       div(class="container")
 
   block content
+
+  div(id="footer")
+    div(class="container")
+      section
+        header
+          h2 Get in touch
+        ul(class="contact")
+          li
+            a(href="#" class="fa fa-twitter-square")
+              span Twitter
+          li
+            a(href="#" class="fa fa-facebook-square")
+              span Facebook
+          li
+            a(href="#" class="fa fa-linkedin-square")
+              span LinkedIn
+          li
+            a(href="#" class="fa fa-envelope")
+              span Email
+  div(id="copyright")
+    div(class="container")
+      a(href="#") blah blah copyright info

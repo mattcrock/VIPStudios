@@ -805,6 +805,13 @@
 		z-index: 1;
 	}
 
+	#logo input
+	{
+		color: gray;
+		float: right;
+		text-align: left;
+	}
+
 		#logo h1
 		{
 			color: #FFF;
@@ -828,6 +835,23 @@
 			color: #FFF;
 		}
 
+/*********************************************************************************/
+/* Login Form                                                                           */
+/*********************************************************************************/
+	#login_hover
+	{
+		text-align: right;
+	}
+
+	#signup_hover
+	{
+		text-align: right;
+	}
+
+	.hidden
+	{
+			visibility: hidden;
+	}
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
@@ -965,7 +989,7 @@
 	#featured
 	{
 		position: relative;
-		background: #f2f2f2;
+		background: #030708;
 		text-align: center;
 	}
 

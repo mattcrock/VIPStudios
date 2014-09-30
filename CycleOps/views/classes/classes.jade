@@ -1,7 +1,6 @@
 extends ..\layout
 
 block content
-  h1 Classes
     nav(id="nav")
       ul(class="submenu")
         if(currentURL == "/classes/bookings/")
@@ -51,3 +50,8 @@ block content
         else
           li
             a(href="/classes/instructors") Instructors
+
+    div(id="featured")
+      div(class="container")
+        header
+          h2 Classes

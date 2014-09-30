@@ -1,7 +1,6 @@
 extends ..\layout
 
 block content
-  h1 Galery
     nav(id="nav")
       ul(class="submenu")
         if(currentURL == "/studio/vipstudios/")
@@ -31,3 +30,7 @@ block content
         else
           li
             a(href="/studio/bikefitment/") ErgoFit Bike Fitment
+    div(id="featured")
+      div(class="container")
+        header
+          h2 Galery
