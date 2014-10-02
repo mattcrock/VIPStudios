@@ -11,6 +11,8 @@ router.get('/index', function(req, res) {
    );
 });
 
+router.get()
+
 router.get('/about/team', function(req, res){
   res.render('\\about\\team', { title:'About Us', currentURL:'/about/team/'}
    )
